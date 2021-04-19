@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ielts | IELTS EXAM SITE </title>
+    <style>
+    .menu-btn {
+      font-family:Arial, Helvetica, sans-serif;
+      background-color: lightskyblue;
+     border:4px;
+     width:600px;
+     color: white;
+     padding: 15px ;
+     margin: 100px 2px;
+
+    }
+    .dropdown-menu {
+       position: relative;
+       display: inline-block;
+    }
+
+
+    .menu-content {
+       position: absolute;
+       display: none;
+       bottom:-48px;
+       background-color: white;
+       width:600px;
+
+    }
+    .links {
+
+       color: black;
+       font-size: 18px;
+       font-family:comic;
+    }
+
+    .dropdown-menu:hover .menu-btn {
+       background-color: orange;
+    }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="inner_header">
+        <div class="logo_container">
+          <h1><span>Boomerang</span></h1>
+        </div>
+        <ul class="navigation">
+          <a href="index.html"><li>HOME</li></a>
+          <a href="examparts.html"><li>EXAM PARTS</li></a>
+          <a href="fq.html"><li>FQ</li></a>
+          <a href="vocabularyidioms.html"><li>Vocabulary and Idioms</li></a>
+          <a href="#"><li>ABOUT US</li></a>
+          <a href="#"><li>CONTACTS</li></a>
+        </ul>
+    </div>
+</div>
+
+
+
+<h2>FAQ</h2>
+<div class="dropdown-menu">
+<button class="menu-btn">  Which test is right for me?↓ </button>
+<div class="menu-content">
+<a class="links" href="#">Most people will take the IELTS Academic test to support their study and application to study overseas - but it is important to check the entry requirements of individual organisations before choosing your test. Students can nominate up to five organisations to which their IELTS test results will be sent automatically and free of charge. There is a fee for sending results to additional organisations. You can request your centre to send your results as long as your IELTS scores are valid.</a>
+</div>
+</div>
+
+
+<script>
+
+let dropdownBtn = document.querySelector('.menu-btn');
+let menuContent = document.querySelector('.menu-content');
+dropdownBtn.addEventListener('click',()=>{
+   if(menuContent.style.display===""){
+      menuContent.style.display="block";
+   } else {
+      menuContent.style.display="";
+   }
+})
+</script>
+
+<div class="footer">
+     <div class="inner_footer">
+         <div class="logo_container2">
+         </div>
+         <div class="footer_third">
+             <h1>Need help?</h1>
+             <a href="#">Terms &amp; Conditions</a>
+             <a href="#">Privacy Policy</a>
+
+
+         </div>
+         <div class="footer_third">
+             <h1>More</h1>
+             <a href="#">Brouchures</a>
+             <a href="#">Impact Reports</a>
+         </div>
+
+
+
+         <div class="footer_third">
+             <h1>Follow Us</h1>
+              <li><a href="#"><i class="fa fa-facebook"></i>
+              <li><a href="#"><i class="fa fa-instagram"></i>
+              <li><a href="#"><i class="fa fa-twitter"></i>
+              <li><a href="youtube.com"><i class="fa fa-youtube-play"></i>
+              <li><a href="#"><i class="fa fa-vk"></i>
+              <li><a href="#"><i class="fa fa-twitte"></i>
+               <span>
+                <i class="fa fa-map-marker"></i>
+                Astana IT University<br>
+                <i class="fa fa-map-marker"></i>
+                Nur-Sultan, 2021<br>
+                Mangilik El 52, C1<br>
+              </span>
+         </div>
+     </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ielts | IELTS EXAM SITE </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="images/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <div class="inner_header">
+        <div class="logo_container">
+          <h1><span>Boomerang</span></h1>
+        </div>
+        <ul class="navigation">
+            <a href="index.html"><li>HOME</li></a>
+            <a href="examparts.html"><li>EXAM PARTS</li></a>
+            <a href="vocabularyidioms.html"><li>Vocabulary and Idioms</li></a>
+            <a href="#"><li>ABOUT US</li></a>
+            <a href="#"><li>CONTACTS</li></a>
+        </ul>
+    </div>
+</div>
+  <div class="parallax">
+    <div class="hero-text">
+      <h1 style="font-size:50px">WELCOME TO OUR IELTS PREPARATION SITE</h1>
+      <a href="test.html"><div class="button">LET'S TAKE A TEST</div></a>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="bi bi-arrow-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+    <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+    <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/>
+  </svg></button>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <a href="products.html"><img src="images/4C.jpg" style="width:100%"></a>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <a href="products.html"><img src="images/4E.jpg" style="width:100%"></a>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <a href="products.html"><img src="images/4D.png" style="width:100%"></a>
+    <div class="text"></div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<h2 class="fq">FAQ</h2>
+<div class="dropdown-menu">
+<button class="menu-btn">  Which test is right for me?↓ </button>
+<div class="menu-content">
+<a class="links" href="#">Most people will take the IELTS Academic test to support their study and application to study overseas - but it is important to check the entry requirements of individual organisations before choosing your test. Students can nominate up to five organisations to which their IELTS test results will be sent automatically and free of charge. There is a fee for sending results to additional organisations. You can request your centre to send your results as long as your IELTS scores are valid.</a>
+</div>
+</div>
+
+<div class="dropdown-menu-2">
+<button class="menu-btn-2"> What are the opportunities after IELTS?↓ </button>
+<div class="menu-content-2">
+<a class="links" href="#">The IELTS is used for a variety of purposes - usually, you have a use for an IELTS score in mind before you take the test. Many people take the IELTS in order to be admitted to an English-medium university; this is probably the most common purpose for taking the test. Other uses include immigration to English-speaking countries and employment in certain industries that require English.</a>
+</div>
+</div>
+
+<script>
+
+let dropdownBtn = document.querySelector('.menu-btn');
+let menuContent = document.querySelector('.menu-content');
+dropdownBtn.addEventListener('click',()=>{
+   if(menuContent.style.display===""){
+      menuContent.style.display="block";
+   } else {
+      menuContent.style.display="";
+   }
+})
+
+let dropdownBtn2 = document.querySelector('.menu-btn-2');
+let menuContent2 = document.querySelector('.menu-content-2');
+dropdownBtn2.addEventListener('click',()=>{
+   if(menuContent2.style.display===""){
+      menuContent2.style.display="block";
+   } else {
+      menuContent2.style.display="";
+   }
+})
+</script>
+
+
+
+<div class="footer">
+     <div class="inner_footer">
+         <div class="logo_container2">
+         </div>
+         <div class="footer_third">
+             <h1>Need help?</h1>
+             <a href="#">Terms &amp; Conditions</a>
+             <a href="#">Privacy Policy</a>
+
+
+         </div>
+         <div class="footer_third">
+             <h1>More</h1>
+             <a href="#">Brouchures</a>
+             <a href="#">Impact Reports</a>
+         </div>
+
+
+
+         <div class="footer_third">
+             <h1>Follow Us</h1>
+              <li><a href="#"><i class="fa fa-facebook"></i>
+              <li><a href="#"><i class="fa fa-instagram"></i>
+              <li><a href="#"><i class="fa fa-twitter"></i>
+              <li><a href="youtube.com"><i class="fa fa-youtube-play"></i>
+              <li><a href="#"><i class="fa fa-vk"></i>
+              <li><a href="#"><i class="fa fa-twitte"></i>
+               <span>
+                <i class="fa fa-map-marker"></i>
+                Astana IT University<br>
+                <i class="fa fa-map-marker"></i>
+                Nur-Sultan, 2021<br>
+                Mangilik El 52, C1<br>
+              </span>
+         </div>
+     </div>
+</div>
+
+</body>
+</html>
